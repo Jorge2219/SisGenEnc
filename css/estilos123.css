@@ -1,0 +1,172 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+    body {
+        overflow-y: scroll;
+        margin: 0; 
+        padding: 0;
+    }
+    .box {
+        position: relative;
+        transition: opacity 0.3s;
+        cursor: pointer;
+        padding: 10px;
+        margin-bottom: 10px; /* Agregar margen inferior para separar las filas */
+        margin-right: 15px;
+    }
+    #editarServicioBtn {
+        background-color: #bcbcbc; /* Color de fondo azul */
+        color: #fff; /* Texto blanco */
+        transition: opacity 0.3s;
+        padding: 10px 40px; /* Espaciado interno */
+        border: none; /* Sin borde */
+        border-radius: 12px;
+        cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    }
+    #editarServicioBtn:hover{
+        opacity: 0.5;
+    }
+    #eliminarServiciosBtn {
+        background-color: #4f1212; /* Color de fondo azul */
+        color: #fff; /* Texto blanco */
+        transition: opacity 0.3s;
+        padding: 10px 40px; /* Espaciado interno */
+        border: none; /* Sin borde */
+        border-radius: 12px;
+        cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    }
+    #eliminarServiciosBtn:hover{
+        opacity: 0.5;
+    }
+
+    .box:hover {
+        opacity: 0.5; /* Cambia este valor según tus preferencias */
+    }
+
+    .box:hover button {
+        color: #4f1212; /* Cambia este color según tus preferencias */
+        cursor: pointer;
+    }
+    .box:last-child {
+        margin-right: 0; /* Eliminar el margen derecho de la última caja */
+    }
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+select {
+    font-family: 'Montserrat', sans-serif;
+    padding: 8px;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+.user-container {
+    position: relative;
+    cursor: pointer;
+    margin-left: 50px;
+}
+
+.user-info {
+    position: relative;
+    top: 10%; /* Mueve la información del usuario debajo de la imagen */
+    left: 0;
+    background-color: #ffffff;
+    padding: 3px;
+    display: none; /* Inicialmente oculto */
+    transition: all 1s ease;
+}
+
+.user-container.active .user-info {
+    display: block; /* Muestra la información cuando el contenedor tiene la clase "active" */
+}
+.swal-color-selector {
+    width: 50px; /* Ajusta el tamaño del selector */
+    height: 50px;
+    border: 1px solid #ddd; /* Añade un borde al selector */
+    border-radius: 5px; /* Agrega esquinas redondeadas */
+}
+
+.swal-color-selector::-webkit-color-swatch-wrapper {
+    padding: 0; /* Elimina el espacio interno del selector */
+}
+
+.swal-color-selector::-webkit-color-swatch {
+    border: none; /* Elimina el borde del selector nativo de WebKit */
+}
+#salirBtn {
+    background-color: #4f1212; /* Color de fondo */
+    color: #ffffff; /* Color del texto */
+    padding: 10px 20px; /* Espaciado interno */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambiar el cursor al pasar el ratón */
+}
+
+#salirBtn:hover {
+    background-color: #4e4343; /* Cambiar el color de fondo al pasar el ratón */
+}
+#crearBtn {
+    background-color: #4f1212; /* Color de fondo */
+    color: #ffffff; /* Color del texto */
+    padding: 10px 20px; /* Espaciado interno */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambiar el cursor al pasar el ratón */
+}
+#crearBtn:hover {
+    background-color: #4e4343; /* Cambiar el color de fondo al pasar el ratón */
+}
+.custom-swal-dialog {
+    max-height: 90vh; /* Máxima altura permitida */
+    overflow-y: auto; /* Habilitar desplazamiento vertical si el contenido excede la altura */
+}
+/* Estilo para el botón "Crear" */
+.swal2-confirm {
+    background-color: #4CAF50; /* Cambia el color de fondo */
+    color: white; /* Cambia el color del texto */
+    border-color: #4CAF50; /* Cambia el color del borde */
+}
+
+/* Estilo para el botón "Previsualizar" */
+#previewBtn {
+    background-color: #4f1212; /* Cambia el color de fondo */
+    color: white; /* Cambia el color del texto */
+    border-color: #463737; /* Cambia el color del borde */
+}
+
+/* Estilo para el botón de cancelar */
+.swal2-cancel {
+    background-color: #ccc; /* Cambia el color de fondo */
+    color: black; /* Cambia el color del texto */
+    border-color: #ccc; /* Cambia el color del borde */
+}
+.boton-eliminar {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+}

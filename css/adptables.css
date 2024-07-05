@@ -1,0 +1,23 @@
+/* Consulta de Medios para Tablets */
+@media only screen and (max-width: 100%) {
+    /* Ajustar estilos para tablets o pantallas más pequeñas */
+    body {
+        font-size: 14px;
+    }
+
+    /* Añadir más estilos según sea necesario */
+}
+
+/* Consulta de Medios para Teléfonos Móviles */
+@media only screen and (max-width: 100%) {
+    /* Ajustar estilos para teléfonos móviles o pantallas más pequeñas */
+    body {
+        font-size: 12px;
+    }
+
+    /* Añadir más estilos según sea necesario */
+}
+img {
+    max-width: 100%;
+    height: auto;
+}

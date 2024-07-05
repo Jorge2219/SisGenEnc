@@ -1,0 +1,111 @@
+/* Estilo para los círculos de opción */
+.radio-input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.option {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid #ccc;
+    margin: 5px;
+    cursor: pointer;
+}
+
+/* Estilo para el círculo seleccionado */
+.radio-input:checked + .option {
+    background-color: #4f1212; /* Cambiar el color de fondo cuando está seleccionado */
+    border-color: #ffffff; /* Cambiar el color del borde cuando está seleccionado */
+}
+
+/* Estilo para el punto central del círculo */
+.option::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: white; /* Color del punto central */
+    display: none; /* Ocultar el punto central por defecto */
+}
+
+/* Estilo para el punto central cuando está seleccionado */
+.radio-input:checked + .option::after {
+    display: block; /* Mostrar el punto central cuando está seleccionado */
+}
+
+
+    .custom-confirm-button {
+        background-color: #4f1212 !important;
+        color: white !important;
+    }
+
+/* style3.css */
+
+.btn-eliminar {
+    background-color: #dc3545; /* Rojo */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    border-radius: 20px; /* Agrega bordes redondeados */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-eliminar:hover {
+    background-color: #61373b; /* Rojo más oscuro al hacer hover */
+}
+.custom-ver-btn {
+    background-color: #4CAF50; /* Cambia el color de fondo */
+    border: none; /* Elimina el borde */
+    color: white; /* Cambia el color del texto */
+    padding: 10px 20px; /* Ajusta el padding */
+    text-align: center; /* Centra el texto */
+    text-decoration: none; /* Elimina el subrayado */
+    display: inline-block; /* Muestra el botón en línea */
+    font-size: 14px; /* Cambia el tamaño de la fuente */
+    margin: 4px 2px; /* Ajusta los márgenes */
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+    border-radius: 20px; /* Agrega bordes redondeados */
+}
+
+.custom-ver-btn:hover {
+    background-color: #4d584d; /* Cambia el color al pasar el cursor */
+}
+.folio-number {
+    color: red;
+}
+.btn-contestar {
+    background-color: #4f1212;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px; /* Opcional: para bordes redondeados */
+}
+
+.btn-contestar:hover {
+    background-color: #756f6f; /* Opcional: cambia el color cuando el botón es hover */
+}
+.periodo-selector {
+    margin-left: auto; /* Esto empujará el selector de periodo hacia la derecha */
+    display: flex;
+    align-items: center; /* Alinea verticalmente con el botón */
+}
+
+.periodo-selector label {
+    margin-right: 10px; /* Espacio entre la etiqueta y el selector */
+}
+

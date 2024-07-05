@@ -1,0 +1,19 @@
+# HTID:23400070: DO NOT REMOVE OR MODIFY THIS LINE AND THE LINES BELOW
+php_value display_errors 1
+
+php_flag output_buffering on
+# DO NOT REMOVE OR MODIFY THIS LINE AND THE LINES ABOVE HTID:23400070:
+
+RewriteEngine On
+RewriteBase /
+
+# Redirigir la raíz y cualquier solicitud no existente a login.php
+RewriteRule ^$ login.php [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ login.php [L]
+
+<IfModule mod_headers.c>
+    Header set Access-Control-Allow-Origin "*"
+</IfModule>
+

@@ -1,0 +1,28 @@
+/* Ejemplo de ajuste para pantallas de tamaño mediano (tablets) */
+@media (max-width: 1024px) {
+    .button-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    button {
+        width: 10%; /* Ocupa todo el ancho disponible */
+    }
+    .acciones-column {
+        width: 100%; /* Ajuste para ocupar todo el ancho en dispositivos móviles */
+        min-width: auto; /* Ajuste para dispositivos móviles */
+    }
+}
+
+/* Ejemplo de ajuste para pantallas pequeñas (celulares) */
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+    }
+     button {
+        width: 50%; /* Ocupa todo el ancho disponible */
+    }
+    .acciones-column {
+        width: 50%; /* Ajuste completo para pantallas pequeñas */
+        min-width: auto; /* Ajuste para dispositivos móviles */
+    }
+}
